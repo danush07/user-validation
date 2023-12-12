@@ -12,7 +12,7 @@ function DeleteUser({ onClose, userId }) {
         dispatch(getAllUsers())
         )
         onClose()
-        // router.push('/dashboard')
+        router.push('/dashboard')
   };
   return (
     <>
