@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const CREATE_USER = "http://localhost:5000/api/users/create-user";
+const CREATE_USER =
+  "https://user-backend-vc38.onrender.com/api/users/create-user";
 
 const createUser = async (details) => {
   try {
@@ -11,7 +12,7 @@ const createUser = async (details) => {
   }
 };
 
-const GET_USERS = "http://localhost:5000/api/users/get-users";
+const GET_USERS = "https://user-backend-vc38.onrender.com/api/users/get-users";
 
 const getAllUsers = async () => {
   try {
@@ -22,7 +23,8 @@ const getAllUsers = async () => {
   }
 };
 
-const GET_SINGLE_USER = "http://localhost:5000/api/users/get-user/";
+const GET_SINGLE_USER =
+  "https://user-backend-vc38.onrender.com/api/users/get-user/";
 
 const getSingleUser = async (id) => {
   try {
@@ -33,7 +35,8 @@ const getSingleUser = async (id) => {
   }
 };
 
-const EDIT_SINGLE_USER = "http://localhost:5000/api/users/edit-user/";
+const EDIT_SINGLE_USER =
+  "https://user-backend-vc38.onrender.com/api/users/edit-user/";
 const editSingleUser = async (id, details) => {
   try {
     const response = await axios.put(`${EDIT_SINGLE_USER}${id}`, details);
@@ -45,7 +48,8 @@ const editSingleUser = async (id, details) => {
   }
 };
 
-const DELETE_USER = "http://localhost:5000/api/users/delete-user/";
+const DELETE_USER =
+  "https://user-backend-vc38.onrender.com/api/users/delete-user/";
 const deleteSingleUser = async (id) => {
   try {
     const response = await axios.delete(`${DELETE_USER}${id}`);
