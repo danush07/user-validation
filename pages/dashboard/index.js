@@ -99,10 +99,10 @@ function Dashboard() {
                             {user.email}
                           </p>
                         </div>
-                        <div className="text-white flex justify-between gap-4">
+                        <div className="text-black flex justify-between gap-4">
                           <CgEye
                             onClick={() => navigateClick(user._id)}
-                            className="cursor-pointer  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-green-500 duration-300"
+                            className="cursor-pointer   transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:text-green-500 duration-300"
                           />
                           <LiaUserEditSolid
                             onClick={() => openEditCanvas(user._id)}
